@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Diabetes Prediction</h1>
+        <form action="/predict" method="post">
+            <input type="number" name="Pregnancies" placeholder="Pregnancies" required>
+            <input type="number" name="Glucose" placeholder="Glucose" required>
+            <input type="number" name="BloodPressure" placeholder="Blood Pressure" required>
+            <input type="number" name="SkinThickness" placeholder="Skin Thickness" required>
+            <input type="number" name="Insulin" placeholder="Insulin" required>
+            <input type="number" name="BMI" placeholder="BMI" required>
+            <input type="number" name="DiabetesPedigreeFunction" placeholder="Diabetes Pedigree Function" required>
+            <input type="number" name="Age" placeholder="Age" required>
+            <button type="submit">Predict</button>
+        </form>
+        <br>
+        <b>Pregnancies	0 - 17 :</b> Number of times the individual has been pregnant.<br><br>
+    <b>Glucose	0 - 199	:</b> Plasma glucose concentration after a 2-hour oral glucose tolerance test. Normal values are typically below 140 mg/dL.<br><br>
+<b>Blood Pressure	0 - 122	:</b> Diastolic blood pressure (mm Hg). Normal values are generally considered to be around 60-80 mm Hg.<br><br>
+<b>Skin Thickness	0 - 99	:</b> Triceps skin fold thickness (mm). A common measurement for body fat.<br><br>
+<b>Insulin	0 - 846	2-Hour serum insulin (mu U/ml) :</b> Insulin levels can vary widely; typical fasting levels are around 2-25 mu U/ml.<br><br>
+<b>BMI (Body Mass Index)	0 - 67.1 :</b> Body mass index, calculated as weight in kg divided by height in m². Normal values are typically between 18.5 and 24.9.<br><br>
+<b> Diabetes Pedigree Function	0.078 - 2.42 :</b> A score that reflects the likelihood of diabetes based on family history. Higher values indicate a greater risk.<br><br>
+<b>Age	21 - 81	Age in years :</b> typically, age can range widely depending on the population being studied.<br><br>
+    </div>
+
+</body>
+</html>
